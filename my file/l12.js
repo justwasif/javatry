@@ -12,3 +12,4 @@ console.log(Math);
 console.log(Math.abs(-4));///for abslute value
 console.log(Math.round(6.5));
 console.log(Math.ceil(1.1)); ///same for floor
+console.log(Math.random()*9 + 1);  ///giives value b/w 0-1 so multiply by 10 math. kar ke round off accha
