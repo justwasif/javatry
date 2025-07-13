@@ -15,11 +15,30 @@
 // }
 // 
 
-for (let i = 0; i < 21; i++) {
-    if(i==5){
-        console.log("got 5" );
-        continue;
-    }
-    console.log(`value of i ${i}`);
+// for (let i = 0; i < 21; i++) {
+//     if(i==5){
+//         console.log("go
+//     }
+//     console.log(`value of i ${i}`);
     
-}
+// }
+const n=["js","for","py","css"]
+// for(const key  in n ){
+//     console.log(n[key]);
+// } 
+n.forEach(function(val){
+    console.log(val);
+})
+const code =[
+    {
+        lang:"jv,",
+        type:"js"
+    },
+    {
+        lang:"py",
+        type:"ps"
+    }
+]
+code.forEach((iteme)=>{
+    console.log(iteme.lang);
+})
