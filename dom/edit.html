@@ -9,16 +9,32 @@
     <ul class="lang">
         <li>javascr</li>
     </ul>
-    <script>function addlang(langname){
-        document.createElement('li');
-        li.innerHTML =`${langname}`
-        document.querySelector{`.lang'}.
-        appendchild(li)
-        }
-        addlanguage("py")
-        addlanguage("tysc")
-        
-    </script>
+    <script>
+        function addlang(langname) {
+    let li = document.createElement('li');
+    li.innerHTML = `${langname}`;
+    document.querySelector('.lang').appendChild(li);
+}
+addlang("py");
+addlang("tysc");
+function add(langname){
+    const li =document.createElement(`li`) ;
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').apppendChild(li)
+
+
+}
+    // add('golang') 
+    const lang = document.querySelector("li:nth-child(2)")
+    // lang.innerHTML ="me"   
+    const newli =document.createElement('li')
+    newli.textContent="mojo"
+    lang.replaceWith(newli)
+    const firstlang =document.querySelector("li:first-child")
+    firstlang.outerHTML='<li>Typescript</li>'
+     const lastlang =document.querySelector('li:last-child')
+     lastlang.remove()
+     </script>
     
 
     
