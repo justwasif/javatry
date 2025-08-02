@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chai aur code</title>
-</head>
-<body>
-   <div class=""parents">
+</head><body>   <div class="parents">
     <div class=""day>monday</div>
     <div class=""day>tuesday</div>
     <div class=""day>wed</div>
 </div> 
 </body>
-</html>
+<script> const parent=document.querySelector(".parents")
+console.log(parent);
+console.log(parent.children[1].innerHTML);
+for (let i = 0; i <parent.children.length;i++ ){
+    console.log(parent.children[i].innerHTML)
+}
+parent.children[1].style.color="blue"
+console.log(parent.firstElementChild);
+consloe.log(parent.lastElementChild);
+const dayone = document.querySelector('day')
+//console.log(dayone);
+//console.loh(dayone.parentElement);
+//console.log(dayone.nextElementSibling);
+console.log('NODES',parents.childNodes);
+
+
+</script>
+</html>  
