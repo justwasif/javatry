@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,15 @@
 <body style="background-color:black;>
     <h1>img</h1>
     <div>
-        <ul id=""image>
-            <li><img width="1000" id="bonnie" src="https://i.postimg.cc/K8F7PwkG/Whats-App-Image-2025-08-07-at-13-05-20-d869efb9.jpg"
+        <ul id="images">
+            <li><img width="100" id="bonnie" src="https://i.postimg.cc/K8F7PwkG/Whats-App-Image-2025-08-07-at-13-05-20-d869efb9.jpg"
         </ul>
     </div>
 
     
 </body>
 <script>
-    document.getElementById('#image').addEventListener('click',function(ev){
+    document.getElementById('#images').addEventListener('click',function(ev){
         console.log('click ')
     })
     // document.getElementById('bonnie').onclick=function(){
@@ -29,6 +30,19 @@
     // document.getElementById("image").addEventListener('clcik',function(ev){
     //     console.log(ev);
     // },false)
+    document.querySelector('#images').addEventListener('click',function(e){
+       if(e.target.tagName==='img'){
+        console.log('img clicked');
+         let listItem = e.target.parentNode;
+          listItem.parentNode.removeChild(listItem);
+
+       }
+    //     console.log(e.target.parentNode);
+    //     let removeIt=e.target.parentNode
+    //    // removeIt.remove()
+    //    removeIt.parentNode.removeChild(removeIt)
+
+    })
 
 
 </script>
