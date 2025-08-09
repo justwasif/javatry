@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async project</title>
+</head>
+<body>
+    <h1>me with myself</h1>
+    <button id="start">start</button>
+    <button id="button">pause</button>
+
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log('wasif');
+    // },300)
+    const me=function(){
+        console.log('say my name')
+    }
+    ///this  code basically change text like it will change me with myself with node.js
+    // const text=function(){
+    //      document.querySelector('h1').innerHTML='node.js'
+        
+
+    //}
+    
+    ///this function will pause the changing of text
+    // const letrechnageit=setTimeout(text)
+    // document.querySelector("#start").addEventListener('click',function(){
+    //     setTimeout(text)
+    //     console.log('start')
+    // })
+    const intrval=function(locally){
+        console.log(locally,Date.now());
+    }
+    const between=setInterval(intrval,1000,'current time')
+
+
+
+    document.querySelector("#button").addEventListener('click',function(){
+        clearInterval(between)
+        console.log("now it stoped");
+    })
+    
+   
+    // document.querySelector('#button').addEventListener('click',function(){
+    // clearTimeout(letrechnageit)
+    // console.log('pause')
+
+   //})
+   
+</script>
+</html>
