@@ -35,13 +35,19 @@
     const intrval=function(locally){
         console.log(locally,Date.now());
     }
-    const between=setInterval(intrval,1000,'current time')
+    document.querySelector('#start').addEventListener('click',function(){
+        between=setInterval(intrval,1000,'current time')
+        setInterval(between)
+        console.log('hopefully it start');
+        
+    })
+    
 
 
 
     document.querySelector("#button").addEventListener('click',function(){
         clearInterval(between)
-        console.log("now it stoped");
+        console.log("now it stopped");
     })
     
    
