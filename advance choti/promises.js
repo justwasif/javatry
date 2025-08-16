@@ -83,7 +83,7 @@ async function getall(){
 getall()
 featch("")
 .then((R)=>{
-    return.json()
+    return R.json()
 })
 .then((data)=>{
     console.log(data);
