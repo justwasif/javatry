@@ -27,10 +27,10 @@ class me{
 
 // }
 
-user.prototype.encryptpassword=function(){
+me.prototype.encryptpassword=function(){
     return`${this.password}`
 }
-user.prototype.chanusername=function(){
+me.prototype.chanusername=function(){
     return`${this.username}`
 }
 const ye=new me("wasif","@7856","1212")
